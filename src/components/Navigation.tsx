@@ -75,20 +75,25 @@ export default function Navigation() {
           </div>
 
           {/* Right side */}
-          <div className="hidden md:flex items-center gap-4">
-            <span className="font-heading text-xs tracking-[0.08em] uppercase text-gray-3">
+          <div className="flex items-center gap-4">
+            <span className="hidden md:inline font-heading text-xs tracking-[0.08em] uppercase text-gray-3">
               March 2026
             </span>
-            <span className="w-px h-4 bg-border" />
-            <span className="font-heading text-xs tracking-[0.08em] uppercase text-gray-3">
-              Confidential
-            </span>
+            <span className="hidden md:inline w-px h-4 bg-border" />
+            <a
+              href="https://calendly.com/cq-marketing/project-kick-off"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-red text-offwhite font-heading font-bold text-sm px-5 py-2.5 rounded-full hover:-translate-y-0.5 hover:shadow-[0_4px_20px_rgba(196,30,42,0.4)] transition-all duration-300"
+            >
+              Get Started
+            </a>
           </div>
 
           {/* Mobile menu button */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden flex flex-col gap-1.5 p-2"
+            className="md:hidden flex flex-col gap-1.5 p-2 ml-3"
             aria-label="Toggle menu"
           >
             <motion.span
@@ -125,6 +130,14 @@ export default function Navigation() {
               {link.label}
             </a>
           ))}
+          <a
+            href="https://calendly.com/cq-marketing/project-kick-off"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 bg-red text-offwhite font-heading font-bold text-lg px-10 py-4 rounded-full hover:shadow-[0_4px_20px_rgba(196,30,42,0.4)] transition-all duration-300"
+          >
+            Get Started →
+          </a>
         </motion.div>
       )}
     </>
