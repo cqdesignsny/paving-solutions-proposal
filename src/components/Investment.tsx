@@ -140,6 +140,40 @@ export default function Investment() {
           </div>
         </motion.div>
 
+        {/* Hosting & Maintenance */}
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportOnce}
+          className="bg-bg-3 border border-border rounded-2xl overflow-hidden mb-6"
+        >
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between px-7 py-5 bg-bg-4">
+            <div>
+              <p className="font-heading text-lg font-extrabold">
+                Hosting & Maintenance
+              </p>
+              <p className="text-base text-gray-2 mt-1">
+                Managed hosting, security updates, uptime monitoring, basic
+                maintenance & support — billed annually
+              </p>
+            </div>
+            <p className="font-heading text-2xl font-extrabold text-offwhite mt-2 sm:mt-0 whitespace-nowrap">
+              $99<span className="text-base font-bold text-gray-3">/mo</span>
+            </p>
+          </div>
+          <div className="px-7 py-4 flex items-start gap-3">
+            <div className="text-red flex-shrink-0 mt-0.5">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            </div>
+            <p className="text-base text-gray-1 leading-relaxed">
+              <span className="font-bold text-offwhite">First 3 months free</span>{" "}
+              — hosting and maintenance are included in the build. Annual
+              billing begins in month 4.
+            </p>
+          </div>
+        </motion.div>
+
         {/* Timeline note */}
         <motion.div
           variants={fadeUp}
