@@ -50,14 +50,14 @@ export default function Navigation() {
         }`}
       >
         <div className="max-w-[1200px] mx-auto px-6 md:px-10 flex items-center justify-between h-16">
-          {/* CQ Brand */}
-          <a href="#" className="flex items-center gap-2.5 group">
+          {/* PS Modern Logo */}
+          <a href="#" className="flex items-center gap-3 group">
             <Image
-              src="/images/cq-logo-white.png"
-              alt="CQ Marketing"
-              width={140}
-              height={32}
-              className="h-7 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
+              src="/images/ps-logo-modern.png"
+              alt="Paving Solutions Inc."
+              width={160}
+              height={48}
+              className="h-9 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
             />
           </a>
 

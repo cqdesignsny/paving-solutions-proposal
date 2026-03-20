@@ -97,7 +97,7 @@ export default function CTA() {
               />
               <span className="text-gray-4">|</span>
               <Image
-                src="/images/ps-logo.png"
+                src="/images/ps-logo-modern.png"
                 alt="Paving Solutions Inc."
                 width={120}
                 height={40}

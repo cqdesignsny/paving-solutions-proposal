@@ -24,15 +24,15 @@ This is NOT the actual Paving Solutions website — it's the **proposal presenta
 ps-proposal/
 ├── public/
 │   ├── images/          # PS logos, CQ logos, job site photos
-│   └── video/           # Hero background video (mp4 + webm)
+│   └── video/           # (excluded from git — use CDN for video assets)
 ├── src/
 │   ├── app/
 │   │   ├── globals.css  # Tailwind + custom theme variables
 │   │   ├── layout.tsx   # Root layout with fonts/metadata
 │   │   └── page.tsx     # Main proposal page (assembles all sections)
 │   ├── components/
-│   │   ├── Navigation.tsx      # Sticky nav + progress bar + mobile menu
-│   │   ├── Hero.tsx            # Video hero with parallax + stats
+│   │   ├── Navigation.tsx      # Sticky nav with PS logo + progress bar + mobile menu
+│   │   ├── Hero.tsx            # Static image hero with parallax + stats
 │   │   ├── CompanyOverview.tsx # Three division cards with real photos
 │   │   ├── VisibilityAudit.tsx # "10 vs 3" audit section
 │   │   ├── Solution.tsx        # What we're building + feature grid
@@ -51,7 +51,7 @@ ps-proposal/
 
 ## Proposal Sections (in scroll order)
 
-1. **Hero** — Video background, PS + CQ logos, headline, animated stats
+1. **Hero** — Static image background with parallax, modernized PS logo, headline, animated stats
 2. **The Company We See** — Three division cards with real job photos
 3. **Visibility Audit** — "10 vs 3" comparison, current digital gaps
 4. **The Solution** — What we're building, key stats, feature grid
@@ -96,10 +96,11 @@ npm start
 
 ## Assets
 
-- **PS Logo:** `public/images/ps-logo.png`
+- **PS Logo (Modern):** `public/images/ps-logo-modern.png` — used in nav, hero, and footer
+- **PS Logo (Original):** `public/images/ps-logo.png` — kept for reference
 - **CQ Logo:** `public/images/cq-logo.png` and `cq-logo-white.png`
 - **Job Photos:** 12 real job site photos from PS Companies projects
-- **Video:** Paving Solutions video (mp4 + webm) used as hero background
+- **Hero Background:** Static image (IMG_0080.jpg) with dark gradient overlay and parallax
 
 ## Notes for Future Development
 

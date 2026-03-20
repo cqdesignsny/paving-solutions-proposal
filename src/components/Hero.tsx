@@ -81,7 +81,7 @@ export default function Hero() {
           className="mb-8"
         >
           <Image
-            src="/images/ps-logo.png"
+            src="/images/ps-logo-modern.png"
             alt="Paving Solutions Inc."
             width={200}
             height={80}
