@@ -30,7 +30,7 @@ const divisions = [
     num: "02",
     name: "Pro Site Work",
     revenue: "~65% of Revenue · 100+ Employees",
-    image: "/images/IMG_0358.jpg",
+    image: "/images/IMG_0002.jpg",
     services: [
       "Full Site Excavation",
       "Underground Utilities",
