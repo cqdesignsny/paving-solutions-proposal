@@ -15,7 +15,7 @@ export default function Hero() {
   const bgScale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
   const bgOpacity = useTransform(scrollYProgress, [0, 0.8], [0.3, 0]);
   const contentY = useTransform(scrollYProgress, [0, 1], [0, 120]);
-  const contentOpacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
+  const contentOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   const stats = [
     { value: 3, label: "Divisions", suffix: "" },
@@ -26,7 +26,7 @@ export default function Hero() {
   return (
     <section
       ref={ref}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-[85vh] md:min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Static image background */}
       <motion.div
@@ -78,14 +78,14 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: [0.23, 1, 0.32, 1] }}
-          className="mb-8"
+          className="mb-4 md:mb-8"
         >
           <Image
             src="/images/ps-logo-modern.png"
             alt="Paving Solutions Inc."
             width={400}
             height={160}
-            className="mx-auto h-28 md:h-36 w-auto"
+            className="mx-auto h-20 md:h-36 w-auto"
             priority
           />
         </motion.div>
@@ -95,7 +95,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
-          className="font-heading text-sm md:text-base tracking-[0.25em] uppercase text-gray-3 mb-8"
+          className="font-heading text-sm md:text-base tracking-[0.25em] uppercase text-gray-3 mb-4 md:mb-8"
         >
           Website Strategy & Build Proposal
         </motion.p>
@@ -121,7 +121,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.9 }}
-          className="text-xl md:text-2xl text-gray-2 max-w-[700px] mx-auto mb-12 leading-relaxed"
+          className="text-lg md:text-2xl text-gray-2 max-w-[700px] mx-auto mb-8 md:mb-12 leading-relaxed"
         >
           Paving Solutions Inc. runs 130+ employees, three specialized
           divisions, and a world-class paving crew across the Tri-State area.
