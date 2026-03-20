@@ -26,7 +26,7 @@ export default function Hero() {
   return (
     <section
       ref={ref}
-      className="relative min-h-[85vh] md:min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-[85vh] md:min-h-screen flex items-end md:items-center justify-center overflow-hidden pb-8 md:pb-0"
     >
       {/* Static image background */}
       <motion.div
@@ -70,7 +70,7 @@ export default function Hero() {
 
       {/* Content */}
       <motion.div
-        className="relative z-10 text-center px-6 max-w-[920px] mx-auto"
+        className="relative z-10 text-center px-6 max-w-[920px] mx-auto pt-20 md:pt-0"
         style={{ y: contentY, opacity: contentOpacity }}
       >
         {/* PS Logo */}
@@ -85,7 +85,7 @@ export default function Hero() {
             alt="Paving Solutions Inc."
             width={400}
             height={160}
-            className="mx-auto h-20 md:h-36 w-auto"
+            className="mx-auto h-16 md:h-36 w-auto"
             priority
           />
         </motion.div>
@@ -105,7 +105,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7, ease: [0.23, 1, 0.32, 1] }}
-          className="font-serif text-[clamp(2.5rem,6vw,5.5rem)] leading-[1.05] mb-6"
+          className="font-serif text-[clamp(2.2rem,6vw,5.5rem)] leading-[1.05] mb-4 md:mb-6"
         >
           Your reputation closes deals.
           <br />
@@ -121,7 +121,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.9 }}
-          className="text-lg md:text-2xl text-gray-2 max-w-[700px] mx-auto mb-8 md:mb-12 leading-relaxed"
+          className="text-base md:text-2xl text-gray-2 max-w-[700px] mx-auto mb-6 md:mb-12 leading-relaxed"
         >
           Paving Solutions Inc. runs 130+ employees, three specialized
           divisions, and a world-class paving crew across the Tri-State area.
@@ -133,7 +133,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 1.1 }}
-          className="flex items-center justify-center gap-8 md:gap-16 flex-wrap"
+          className="flex items-center justify-center gap-6 md:gap-16 flex-wrap"
         >
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
