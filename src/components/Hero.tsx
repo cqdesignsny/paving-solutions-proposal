@@ -12,8 +12,8 @@ export default function Hero() {
     offset: ["start start", "end start"],
   });
 
-  const videoScale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
-  const videoOpacity = useTransform(scrollYProgress, [0, 0.8], [0.35, 0]);
+  const bgScale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
+  const bgOpacity = useTransform(scrollYProgress, [0, 0.8], [0.3, 0]);
   const contentY = useTransform(scrollYProgress, [0, 1], [0, 120]);
   const contentOpacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
 
@@ -28,22 +28,19 @@ export default function Hero() {
       ref={ref}
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Video background */}
+      {/* Static image background */}
       <motion.div
         className="absolute inset-0 z-0"
-        style={{ scale: videoScale, opacity: videoOpacity }}
+        style={{ scale: bgScale, opacity: bgOpacity }}
       >
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/video/hero.webm" type="video/webm" />
-          <source src="/video/hero.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-bg/60 via-bg/40 to-bg" />
+        <Image
+          src="/images/IMG_0080.jpg"
+          alt="Paving Solutions crew at work"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-bg/50 via-bg/40 to-bg" />
       </motion.div>
 
       {/* Grid overlay */}
