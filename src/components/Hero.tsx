@@ -107,13 +107,13 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.7, ease: [0.23, 1, 0.32, 1] }}
           className="font-serif text-[clamp(2.5rem,6vw,5.5rem)] leading-[1.05] mb-6"
         >
-          Your operation is a 10.
+          Your reputation closes deals.
           <br />
           <span className="italic text-red-light">
-            Let&apos;s make your digital
+            We&apos;ll build you a website
           </span>
           <br />
-          <span className="italic text-red-light">presence match.</span>
+          <span className="italic text-red-light">that opens them.</span>
         </motion.h1>
 
         {/* Description */}
