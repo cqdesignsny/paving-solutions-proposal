@@ -83,9 +83,9 @@ export default function Hero() {
           <Image
             src="/images/ps-logo-modern.png"
             alt="Paving Solutions Inc."
-            width={200}
-            height={80}
-            className="mx-auto h-16 md:h-20 w-auto"
+            width={400}
+            height={160}
+            className="mx-auto h-28 md:h-36 w-auto"
             priority
           />
         </motion.div>

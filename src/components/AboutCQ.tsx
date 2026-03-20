@@ -161,7 +161,7 @@ export default function AboutCQ() {
                   key={item}
                   className="text-[15px] text-gray-2 leading-relaxed flex items-start gap-2"
                 >
-                  <span className="text-red mt-1 flex-shrink-0">✓</span>
+                  <svg className="w-4 h-4 text-red mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
                   {item}
                 </li>
               ))}

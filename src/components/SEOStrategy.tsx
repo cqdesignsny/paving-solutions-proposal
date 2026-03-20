@@ -92,7 +92,9 @@ export default function SEOStrategy() {
           className="bg-gradient-to-r from-bg-3 to-bg-2 border border-border rounded-2xl p-7 md:p-9 mb-10"
         >
           <div className="flex items-start gap-4">
-            <div className="text-3xl flex-shrink-0">🤖</div>
+            <div className="text-red flex-shrink-0">
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714a2.25 2.25 0 00.659 1.591L19 14.5M14.25 3.104c.251.023.501.05.75.082M19 14.5l-2.47 2.47a2.25 2.25 0 01-1.59.659H9.06a2.25 2.25 0 01-1.591-.659L5 14.5m14 0V17a2.25 2.25 0 01-2.25 2.25H7.25A2.25 2.25 0 015 17v-2.5" /></svg>
+            </div>
             <div>
               <h3 className="font-heading text-lg font-bold mb-2">
                 The AI Search Advantage

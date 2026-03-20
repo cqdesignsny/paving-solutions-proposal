@@ -9,6 +9,7 @@ import SiteArchitecture from "@/components/SiteArchitecture";
 import SEOStrategy from "@/components/SEOStrategy";
 import Process from "@/components/Process";
 import Investment from "@/components/Investment";
+import ProjectedImpact from "@/components/ProjectedImpact";
 import WhatsNext from "@/components/WhatsNext";
 import AboutCQ from "@/components/AboutCQ";
 import CTA from "@/components/CTA";
@@ -26,6 +27,7 @@ export default function Home() {
       <SEOStrategy />
       <Process />
       <Investment />
+      <ProjectedImpact />
       <WhatsNext />
       <AboutCQ />
       <CTA />

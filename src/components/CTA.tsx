@@ -93,7 +93,7 @@ export default function CTA() {
                 alt="CQ Marketing"
                 width={140}
                 height={32}
-                className="h-6 w-auto opacity-70"
+                className="h-7 w-auto opacity-80"
               />
               <span className="text-gray-4">|</span>
               <Image

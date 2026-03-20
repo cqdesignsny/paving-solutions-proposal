@@ -6,52 +6,40 @@ import SectionTag from "./SectionTag";
 
 const addons = [
   {
-    name: "Custom Multi-Step Lead Form",
-    description:
-      "Advanced bid request with service routing, file uploads, auto-notifications",
-    price: "$350 – $500",
-  },
-  {
     name: "AI-Powered Lead Response",
     description:
       "Instant auto-replies, answers common questions, books meetings on your calendar",
-    price: "$500 – $750",
+    price: "$500",
   },
   {
-    name: "Domain Setup & Redirects",
+    name: "Custom Multi-Step Lead Form",
     description:
-      "Register new parent domain, configure prositework & psconcrete redirects",
-    price: "$150",
+      "Advanced bid request with service routing, file uploads, auto-notifications",
+    price: "$500",
   },
   {
     name: "Additional Deep-Dive Service Pages",
     description:
       "Individual pages for specific services (sealcoating, utilities, etc.) — more SEO coverage",
-    price: "$200 – $300 / page",
-  },
-  {
-    name: "Case Study Template + First 3 Writeups",
-    description:
-      "Detailed project case studies with before/after, scope, timeline, results",
-    price: "$400 – $500",
+    price: "$200 / page",
   },
   {
     name: "Blog Setup + First 4 SEO Articles",
     description:
       "Blog infrastructure + keyword-targeted content to jumpstart organic traffic",
-    price: "$400 – $500",
+    price: "$500",
   },
   {
     name: "Google Business Profile Optimization",
     description:
       "Full GBP audit, optimization, photo upload, category setup, review strategy",
-    price: "$200 – $300",
+    price: "$200",
   },
   {
     name: "Email Signature Design (Company-Wide)",
     description:
       "Professional HTML email signatures for team members",
-    price: "$150",
+    price: "$100",
   },
 ];
 
@@ -132,8 +120,8 @@ export default function Investment() {
                 Phase 3 — SEO, Launch & Support
               </p>
               <p className="text-sm text-gray-3 mt-0.5">
-                Weeks 9–12+ · Revisions, SEO implementation, go-live, 30-day
-                monitoring
+                Weeks 9–12+ · Revisions, SEO implementation, domain setup &
+                redirects, go-live, 30-day monitoring
               </p>
             </div>
             <p className="font-heading text-xl font-bold text-red mt-2 sm:mt-0 whitespace-nowrap">
@@ -160,7 +148,9 @@ export default function Investment() {
           viewport={viewportOnce}
           className="bg-bg-2 border border-border rounded-2xl p-7 mb-14 flex flex-col md:flex-row items-start gap-4"
         >
-          <div className="text-3xl flex-shrink-0">📅</div>
+          <div className="text-red flex-shrink-0">
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" /></svg>
+          </div>
           <div>
             <h3 className="font-heading text-lg font-bold mb-1">
               Estimated Timeline: 12–15 Weeks
@@ -229,8 +219,9 @@ export default function Investment() {
           viewport={viewportOnce}
           className="mt-8 text-sm text-gray-3"
         >
-          Total project range with add-ons: $5,500 – $7,000+ depending on
-          selections.
+          Domain setup, redirects, and core site infrastructure are included
+          in the base build. Add-ons can be bundled at kickoff or added
+          post-launch.
         </motion.p>
       </div>
     </section>
