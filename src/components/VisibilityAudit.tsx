@@ -139,7 +139,7 @@ export default function VisibilityAudit() {
             >
               <div className="flex items-center gap-3 mb-5">
                 <div
-                  className={`flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[13px] font-heading font-bold tracking-wide ${
+                  className={`flex items-center gap-2 px-3.5 py-1.5 rounded-full text-sm font-heading font-bold tracking-wide ${
                     item.severity === "low"
                       ? "bg-red-glow text-red-light"
                       : "bg-[rgba(232,160,32,0.12)] text-[#E8A020]"

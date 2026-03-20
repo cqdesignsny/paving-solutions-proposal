@@ -51,13 +51,13 @@ export default function Navigation() {
       >
         <div className="max-w-[1200px] mx-auto px-6 md:px-10 flex items-center justify-between h-16">
           {/* CQ Brand */}
-          <a href="#" className="flex items-center gap-2.5 group">
+          <a href="#" className="flex items-center gap-2.5 group py-2">
             <Image
               src="/images/cq-logo-white.png"
               alt="CQ Marketing"
               width={140}
               height={32}
-              className="h-7 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
+              className="h-8 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
             />
           </a>
 
@@ -76,11 +76,11 @@ export default function Navigation() {
 
           {/* Right side */}
           <div className="hidden md:flex items-center gap-4">
-            <span className="font-heading text-[11px] tracking-[0.08em] uppercase text-gray-3">
+            <span className="font-heading text-xs tracking-[0.08em] uppercase text-gray-3">
               March 2026
             </span>
             <span className="w-px h-4 bg-border" />
-            <span className="font-heading text-[11px] tracking-[0.08em] uppercase text-gray-3">
+            <span className="font-heading text-xs tracking-[0.08em] uppercase text-gray-3">
               Confidential
             </span>
           </div>

@@ -179,7 +179,7 @@ export default function ProjectedImpact() {
 
               <div className="flex items-center gap-4 mb-4">
                 <div className="flex-1">
-                  <p className="font-heading text-[11px] tracking-[0.1em] uppercase text-gray-4 mb-1">
+                  <p className="font-heading text-xs tracking-[0.1em] uppercase text-gray-4 mb-1">
                     Today
                   </p>
                   <p className="font-heading text-base font-semibold text-gray-3">
@@ -190,7 +190,7 @@ export default function ProjectedImpact() {
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
                 </div>
                 <div className="flex-1">
-                  <p className="font-heading text-[11px] tracking-[0.1em] uppercase text-red mb-1">
+                  <p className="font-heading text-xs tracking-[0.1em] uppercase text-red mb-1">
                     Projected
                   </p>
                   <p className="font-heading text-base font-bold text-offwhite">

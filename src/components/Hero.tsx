@@ -143,7 +143,7 @@ export default function Hero() {
                   suffix={stat.suffix}
                 />
               </div>
-              <div className="font-heading text-xs md:text-sm tracking-[0.15em] uppercase text-gray-3 mt-1">
+              <div className="font-heading text-sm md:text-sm tracking-[0.15em] uppercase text-gray-3 mt-1">
                 {stat.label}
               </div>
             </div>
@@ -152,7 +152,7 @@ export default function Hero() {
             <div className="font-heading text-3xl md:text-4xl font-extrabold text-offwhite">
               Tri-State
             </div>
-            <div className="font-heading text-xs md:text-sm tracking-[0.15em] uppercase text-gray-3 mt-1">
+            <div className="font-heading text-sm md:text-sm tracking-[0.15em] uppercase text-gray-3 mt-1">
               Service Area
             </div>
           </div>

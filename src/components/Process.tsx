@@ -87,7 +87,7 @@ export default function Process() {
                 <div className="w-16 h-16 rounded-full bg-bg-3 border-2 border-border flex items-center justify-center font-heading font-extrabold text-sm text-red">
                   {phase.id}
                 </div>
-                <div className="font-heading text-xs text-gray-3 uppercase tracking-[0.08em] text-center">
+                <div className="font-heading text-sm text-gray-3 uppercase tracking-[0.08em] text-center">
                   {phase.weeks}
                 </div>
               </div>

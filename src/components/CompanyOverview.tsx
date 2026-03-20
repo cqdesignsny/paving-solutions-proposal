@@ -135,7 +135,7 @@ export default function CompanyOverview() {
                       key={s}
                       className="text-base text-gray-2 flex items-start gap-2"
                     >
-                      <span className="text-gray-4 mt-1.5 text-xs">→</span>
+                      <span className="text-gray-4 mt-1 text-sm">→</span>
                       {s}
                     </li>
                   ))}

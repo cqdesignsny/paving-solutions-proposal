@@ -89,7 +89,7 @@ export default function Investment() {
               <p className="font-heading text-lg font-semibold">
                 Phase 1 — Discovery & Design
               </p>
-              <p className="text-sm text-gray-3 mt-0.5">
+              <p className="text-base text-gray-3 mt-0.5">
                 Weeks 1–4 · Strategy, architecture, keyword research, design
                 concepts
               </p>
@@ -104,7 +104,7 @@ export default function Investment() {
               <p className="font-heading text-lg font-semibold">
                 Phase 2 — Development & Content
               </p>
-              <p className="text-sm text-gray-3 mt-0.5">
+              <p className="text-base text-gray-3 mt-0.5">
                 Weeks 5–8 · Full site build, SEO copywriting, staging site
                 delivery
               </p>
@@ -119,7 +119,7 @@ export default function Investment() {
               <p className="font-heading text-lg font-semibold">
                 Phase 3 — SEO, Launch & Support
               </p>
-              <p className="text-sm text-gray-3 mt-0.5">
+              <p className="text-base text-gray-3 mt-0.5">
                 Weeks 9–12+ · Revisions, SEO implementation, domain setup &
                 redirects, go-live, 30-day monitoring
               </p>
@@ -235,7 +235,7 @@ export default function Investment() {
                 <p className="font-heading text-base font-semibold">
                   {addon.name}
                 </p>
-                <p className="text-sm text-gray-3 mt-0.5">
+                <p className="text-base text-gray-3 mt-0.5">
                   {addon.description}
                 </p>
               </div>
@@ -251,7 +251,7 @@ export default function Investment() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="mt-8 text-sm text-gray-3"
+          className="mt-8 text-base text-gray-3"
         >
           Domain setup, redirects, and core site infrastructure are included
           in the base build. Add-ons can be bundled at kickoff or added

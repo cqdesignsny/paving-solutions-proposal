@@ -65,7 +65,7 @@ export default function CTA() {
             whileInView="visible"
             viewport={viewportOnce}
             href="mailto:cesar@creativequalitymarketing.com?subject=Paving%20Solutions%20Website%20—%20Let's%20Go"
-            className="inline-flex items-center gap-3 bg-red text-offwhite font-heading font-bold text-lg px-10 py-4 rounded-full hover:-translate-y-1 hover:shadow-[0_8px_40px_rgba(196,30,42,0.4)] transition-all duration-300"
+            className="inline-flex items-center justify-center gap-3 bg-red text-offwhite font-heading font-bold text-lg md:text-xl px-10 py-5 rounded-full hover:-translate-y-1 hover:shadow-[0_8px_40px_rgba(196,30,42,0.4)] transition-all duration-300 w-full sm:w-auto"
           >
             Let&apos;s Get Started
             <span className="text-xl">→</span>
@@ -76,7 +76,7 @@ export default function CTA() {
             initial="hidden"
             whileInView="visible"
             viewport={viewportOnce}
-            className="mt-6 text-sm text-gray-3"
+            className="mt-6 text-base text-gray-3"
           >
             Or call Cesar directly: (845) 555-0123
           </motion.p>
@@ -105,22 +105,22 @@ export default function CTA() {
               />
             </div>
             <div className="text-center md:text-right">
-              <p className="text-sm text-gray-3">
+              <p className="text-base text-gray-3">
                 Prepared exclusively for Paving Solutions Inc. by{" "}
                 <a
                   href="https://creativequalitymarketing.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-red hover:text-red-light transition-colors"
+                  className="text-red hover:text-red-light transition-colors py-1"
                 >
                   CQ Marketing
                 </a>
               </p>
-              <p className="text-xs text-gray-4 mt-1">
+              <p className="text-sm text-gray-4 mt-2">
                 Hudson Valley, NY ·{" "}
                 <a
                   href="mailto:cesar@creativequalitymarketing.com"
-                  className="text-gray-3 hover:text-red transition-colors"
+                  className="text-gray-3 hover:text-red transition-colors py-1 inline-block"
                 >
                   cesar@creativequalitymarketing.com
                 </a>

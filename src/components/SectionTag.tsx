@@ -19,7 +19,7 @@ export default function SectionTag({ label, id }: SectionTagProps) {
       className="flex items-center gap-3 mb-5"
     >
       <span className="w-8 h-[2px] bg-red-600 rounded-full" />
-      <span className="font-heading text-xs tracking-[0.2em] uppercase text-red-500 font-bold">
+      <span className="font-heading text-sm tracking-[0.2em] uppercase text-red-500 font-bold">
         {label}
       </span>
     </motion.div>
