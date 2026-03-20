@@ -1,0 +1,185 @@
+"use client";
+
+import { motion, useScroll, useTransform } from "motion/react";
+import { useRef } from "react";
+import Image from "next/image";
+import AnimatedCounter from "./AnimatedCounter";
+
+export default function Hero() {
+  const ref = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+
+  const videoScale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
+  const videoOpacity = useTransform(scrollYProgress, [0, 0.8], [0.35, 0]);
+  const contentY = useTransform(scrollYProgress, [0, 1], [0, 120]);
+  const contentOpacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
+
+  const stats = [
+    { value: 3, label: "Divisions", suffix: "" },
+    { value: 130, label: "Employees", suffix: "+" },
+    { value: 20, label: "Years in Business", suffix: "+" },
+  ];
+
+  return (
+    <section
+      ref={ref}
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      {/* Video background */}
+      <motion.div
+        className="absolute inset-0 z-0"
+        style={{ scale: videoScale, opacity: videoOpacity }}
+      >
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/video/hero.webm" type="video/webm" />
+          <source src="/video/hero.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-bg/60 via-bg/40 to-bg" />
+      </motion.div>
+
+      {/* Grid overlay */}
+      <div
+        className="absolute inset-0 z-[1] opacity-20"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)",
+          backgroundSize: "80px 80px",
+          maskImage:
+            "radial-gradient(ellipse 60% 50% at 50% 50%, black 10%, transparent 75%)",
+          WebkitMaskImage:
+            "radial-gradient(ellipse 60% 50% at 50% 50%, black 10%, transparent 75%)",
+        }}
+      />
+
+      {/* Red glow */}
+      <div className="absolute inset-0 z-[1]">
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 70% 50% at 50% 45%, rgba(196,30,42,0.08) 0%, transparent 70%)",
+          }}
+        />
+      </div>
+
+      {/* Content */}
+      <motion.div
+        className="relative z-10 text-center px-6 max-w-[920px] mx-auto"
+        style={{ y: contentY, opacity: contentOpacity }}
+      >
+        {/* PS Logo */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3, ease: [0.23, 1, 0.32, 1] }}
+          className="mb-8"
+        >
+          <Image
+            src="/images/ps-logo.png"
+            alt="Paving Solutions Inc."
+            width={200}
+            height={80}
+            className="mx-auto h-16 md:h-20 w-auto"
+            priority
+          />
+        </motion.div>
+
+        {/* Tag */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.5 }}
+          className="font-heading text-[13px] md:text-sm tracking-[0.25em] uppercase text-gray-3 mb-8"
+        >
+          Website Strategy & Build Proposal
+        </motion.p>
+
+        {/* Headline */}
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.7, ease: [0.23, 1, 0.32, 1] }}
+          className="font-serif text-[clamp(2.5rem,6vw,5.5rem)] leading-[1.05] mb-6"
+        >
+          Your operation is a 10.
+          <br />
+          <span className="italic text-red-light">
+            Let&apos;s make your digital
+          </span>
+          <br />
+          <span className="italic text-red-light">presence match.</span>
+        </motion.h1>
+
+        {/* Description */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.9 }}
+          className="text-lg md:text-xl text-gray-2 max-w-[640px] mx-auto mb-12 leading-relaxed"
+        >
+          Paving Solutions Inc. runs 130+ employees, three specialized
+          divisions, and a world-class paving crew across the Tri-State area.
+          Your website should hit just as hard as your operation on Route 17M.
+        </motion.p>
+
+        {/* Stats */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 1.1 }}
+          className="flex items-center justify-center gap-8 md:gap-16 flex-wrap"
+        >
+          {stats.map((stat) => (
+            <div key={stat.label} className="text-center">
+              <div className="font-heading text-3xl md:text-4xl font-extrabold text-offwhite">
+                <AnimatedCounter
+                  target={stat.value}
+                  suffix={stat.suffix}
+                />
+              </div>
+              <div className="font-heading text-[11px] md:text-xs tracking-[0.15em] uppercase text-gray-3 mt-1">
+                {stat.label}
+              </div>
+            </div>
+          ))}
+          <div className="text-center">
+            <div className="font-heading text-3xl md:text-4xl font-extrabold text-offwhite">
+              Tri-State
+            </div>
+            <div className="font-heading text-[11px] md:text-xs tracking-[0.15em] uppercase text-gray-3 mt-1">
+              Service Area
+            </div>
+          </div>
+        </motion.div>
+      </motion.div>
+
+      {/* Scroll cue */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.6, duration: 0.8 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10"
+      >
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          className="flex flex-col items-center gap-2"
+        >
+          <div className="w-px h-8 bg-gradient-to-b from-red to-transparent" />
+          <span className="font-heading text-[10px] tracking-[0.2em] uppercase text-gray-3">
+            Scroll
+          </span>
+        </motion.div>
+      </motion.div>
+    </section>
+  );
+}

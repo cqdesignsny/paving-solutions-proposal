@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Paving Solutions Inc. — Website Proposal
+
+An interactive, animated web proposal/presentation built for **Paving Solutions Inc.** by **CQ Marketing**. This is a live, scrollable pitch deck designed to win a $5,000 website build contract.
+
+## About This Project
+
+This is NOT the actual Paving Solutions website — it's the **proposal presentation** for the website build. The proposal itself demonstrates CQ Marketing's capabilities: modern framework, smooth animations, responsive design, and premium aesthetics.
+
+**Client:** Paving Solutions Inc. (Monroe, NY)
+**Agency:** CQ Marketing (Newburgh, NY)
+**Prepared:** March 2026
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Styling:** Tailwind CSS v4
+- **Animations:** Motion (Framer Motion) — scroll reveals, parallax, animated counters
+- **Fonts:** Instrument Serif, Plus Jakarta Sans, DM Sans (Google Fonts)
+- **Deployment:** Vercel (or any static host)
+
+## Project Structure
+
+```
+ps-proposal/
+├── public/
+│   ├── images/          # PS logos, CQ logos, job site photos
+│   └── video/           # Hero background video (mp4 + webm)
+├── src/
+│   ├── app/
+│   │   ├── globals.css  # Tailwind + custom theme variables
+│   │   ├── layout.tsx   # Root layout with fonts/metadata
+│   │   └── page.tsx     # Main proposal page (assembles all sections)
+│   ├── components/
+│   │   ├── Navigation.tsx      # Sticky nav + progress bar + mobile menu
+│   │   ├── Hero.tsx            # Video hero with parallax + stats
+│   │   ├── CompanyOverview.tsx # Three division cards with real photos
+│   │   ├── VisibilityAudit.tsx # "10 vs 3" audit section
+│   │   ├── Solution.tsx        # What we're building + feature grid
+│   │   ├── SiteArchitecture.tsx # 13-page sitemap with rationale
+│   │   ├── SEOStrategy.tsx     # SEO scope (on-page, technical, local, AI)
+│   │   ├── Process.tsx         # Three-phase timeline
+│   │   ├── Investment.tsx      # Pricing ($5,000) + add-ons
+│   │   ├── WhatsNext.tsx       # Marketing opportunity tease
+│   │   ├── AboutCQ.tsx         # Team + why CQ Marketing
+│   │   ├── CTA.tsx             # Final CTA + footer
+│   │   ├── AnimatedCounter.tsx # Scroll-triggered number counter
+│   │   └── SectionTag.tsx      # Reusable section label component
+│   └── lib/
+│       └── animations.ts      # Shared Framer Motion variants
+```
+
+## Proposal Sections (in scroll order)
+
+1. **Hero** — Video background, PS + CQ logos, headline, animated stats
+2. **The Company We See** — Three division cards with real job photos
+3. **Visibility Audit** — "10 vs 3" comparison, current digital gaps
+4. **The Solution** — What we're building, key stats, feature grid
+5. **Site Architecture** — All 13 proposed pages with SEO rationale
+6. **SEO Strategy** — On-page, technical, local, and AI search scope
+7. **Our Process** — Three phases with timeline and deliverables
+8. **Investment** — $5,000 total ($2,000 / $1,500 / $1,500) + add-ons
+9. **Looking Ahead** — LinkedIn, social, AI automation marketing tease
+10. **Who We Are** — CQ Marketing team + "Why We're the Right Fit"
+11. **CTA** — "Let's Get Started" with email link + phone
+
+## Pricing (Updated)
+
+- **Phase 1:** $2,000 (Discovery & Design, Weeks 1–4)
+- **Phase 2:** $1,500 (Development & Content, Weeks 5–8)
+- **Phase 3:** $1,500 (SEO, Launch & Support, Weeks 9–12+)
+- **Total:** $5,000
+- **Add-ons:** $500–$2,000+ depending on selections
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Run dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Design System
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Palette:** Deep black (#0A0A0A), dark grays, red accent (#C41E2A), off-white (#F2F0ED)
+- **Typography:** Instrument Serif (display), Plus Jakarta Sans (headings/labels), DM Sans (body)
+- **Aesthetic:** "Industrial luxury" — high-end construction branding meets modern SaaS polish
+- **Animations:** Scroll-triggered reveals, parallax, staggered entrances, number counters
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Assets
 
-## Learn More
+- **PS Logo:** `public/images/ps-logo.png`
+- **CQ Logo:** `public/images/cq-logo.png` and `cq-logo-white.png`
+- **Job Photos:** 12 real job site photos from PS Companies projects
+- **Video:** Paving Solutions video (mp4 + webm) used as hero background
 
-To learn more about Next.js, take a look at the following resources:
+## Notes for Future Development
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- This proposal will serve as a design reference for the actual PS Companies website build
+- The color palette, typography, and component patterns can be carried forward
+- Google Stitch MCP integration planned for the actual website design phase
+- All content and pricing in this proposal reflect the live pitch to Jonah Reich
