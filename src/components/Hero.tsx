@@ -70,7 +70,7 @@ export default function Hero() {
 
       {/* Content */}
       <motion.div
-        className="relative z-10 text-center px-6 max-w-[920px] mx-auto pt-20 md:pt-0"
+        className="relative z-10 text-center px-6 max-w-[920px] mx-auto pt-24 md:pt-24"
         style={{ y: contentY, opacity: contentOpacity }}
       >
         {/* PS Logo */}
@@ -78,14 +78,14 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: [0.23, 1, 0.32, 1] }}
-          className="mb-4 md:mb-8"
+          className="mb-4 md:mb-6"
         >
           <Image
             src="/images/ps-logo-modern.png"
             alt="Paving Solutions Inc."
             width={400}
             height={160}
-            className="mx-auto h-16 md:h-36 w-auto"
+            className="mx-auto h-24 md:h-28 w-auto"
             priority
           />
         </motion.div>
@@ -95,7 +95,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
-          className="font-heading text-sm md:text-base tracking-[0.25em] uppercase text-gray-3 mb-4 md:mb-8"
+          className="font-heading text-sm md:text-base tracking-[0.25em] uppercase text-gray-3 mb-4 md:mb-6"
         >
           Website Strategy & Build Proposal
         </motion.p>
