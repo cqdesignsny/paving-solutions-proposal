@@ -23,7 +23,7 @@ const opportunities = [
     ),
     title: "On-Site Content & Social",
     description:
-      "We show up with cameras when your crew finishes a job. One shoot becomes a LinkedIn post, an Instagram post, a website update, and a blog article. Real content from real job sites — not stock photos. The kind of content that makes American Pavement Solutions nervous.",
+      "We show up with cameras when your crew finishes a job. One shoot becomes a LinkedIn post, an Instagram post, a website update, and a blog article. Real content from real job sites, not stock photos. We can build a flexible content schedule around your availability over the next 12 months so it never gets in the way of your work.",
   },
   {
     icon: (
@@ -101,7 +101,7 @@ export default function WhatsNext() {
           className="mt-10 text-base text-gray-3"
         >
           Monthly marketing plans start at $750/month, scaling to $3,000/month.
-          We can discuss this after the site is built and performing — no
+          We can discuss this after the site is built and performing. No
           pressure, just opportunity.
         </motion.p>
       </div>

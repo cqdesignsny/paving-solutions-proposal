@@ -24,7 +24,7 @@ const divisions = [
       "Asphalt Repairs & Maintenance",
     ],
     highlight:
-      '"The best paving crew I\'ve ever seen in 40 years. Poetry in motion." — Scott, Paving Division Lead',
+      '"The best paving crew I\'ve ever seen in 40 years. Poetry in motion." - Scott, Paving Division Lead',
   },
   {
     num: "02",
@@ -41,7 +41,7 @@ const divisions = [
       "Retention Ponds & Pump Stations",
     ],
     highlight:
-      "Your heavyweight division — 10 crews, everything from underground utilities to full road building.",
+      "Your heavyweight division. 10 crews, everything from underground utilities to full road building.",
   },
   {
     num: "03",
@@ -50,7 +50,7 @@ const divisions = [
     image: "/images/IMG_0051.jpg",
     services: [
       "Foundations",
-      "Flatwork — Sidewalks & Curbs",
+      "Flatwork, Sidewalks & Curbs",
       "Exterior Stairwells",
       "Retaining Walls",
       "ADA Compliance Work",
@@ -86,9 +86,9 @@ export default function CompanyOverview() {
           viewport={viewportOnce}
           className="text-xl md:text-2xl text-gray-2 max-w-[600px] leading-relaxed mb-14"
         >
-          From asphalt to underground utilities to structural concrete — PS
+          From asphalt to underground utilities to structural concrete, PS
           Companies delivers full-site infrastructure across the Tri-State
-          area. That scope needs to be visible online.
+          area. That scope deserves to be visible online.
         </motion.p>
 
         {/* Division Cards */}

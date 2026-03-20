@@ -19,7 +19,7 @@ const seoSections = [
   {
     title: "Technical SEO",
     items: [
-      "Schema markup — LocalBusiness, Contractor, FAQ, AggregateRating",
+      "Schema markup including LocalBusiness, Contractor, FAQ, AggregateRating",
       "XML sitemap generation & Google submission",
       "Robots.txt configuration",
       "Canonical URL setup for all pages",
@@ -78,7 +78,7 @@ export default function SEOStrategy() {
           viewport={viewportOnce}
           className="text-xl md:text-2xl text-gray-2 max-w-[620px] leading-relaxed mb-6"
         >
-          Every page we build is engineered for search visibility — from
+          Every page we build is engineered for search visibility, from
           Google to ChatGPT. Here&apos;s the full SEO scope included in this
           build.
         </motion.p>
@@ -103,7 +103,7 @@ export default function SEOStrategy() {
                 We don&apos;t just build for Google anymore. We build for
                 ChatGPT, Perplexity, and the AI tools your future clients are
                 already using to find contractors. Structured content, natural
-                language descriptions, FAQ schema — all baked into the
+                language descriptions, FAQ schema, all baked into the
                 foundation so AI search tools can read and recommend your
                 company.
               </p>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Website Proposal — Paving Solutions Inc. | CQ Marketing",
+  title: "Website Proposal | Paving Solutions Inc. | CQ Marketing",
   description:
     "A custom website strategy and build proposal prepared exclusively for Paving Solutions Inc. by CQ Marketing.",
 };

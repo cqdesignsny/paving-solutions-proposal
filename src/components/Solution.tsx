@@ -37,7 +37,7 @@ const features = [
     ),
     title: "Real Photos, Real Work",
     description:
-      "No more stock images. Your real job sites, your real crew, your real equipment. \"You gotta see the dirt\" — and they will.",
+      "No more stock images. Your real job sites, your real crew, your real equipment. \"You gotta see the dirt.\" And they will.",
   },
   {
     icon: (
@@ -53,7 +53,7 @@ const features = [
     ),
     title: "Easy Content Management",
     description:
-      "Upload new project photos, update service descriptions, add blog posts — without calling a developer. You asked about this, and we deliver it.",
+      "Upload new project photos, update service descriptions, add blog posts. No need to call a developer. You asked about this, and we deliver it.",
   },
 ];
 
@@ -116,7 +116,7 @@ export default function Solution() {
               <AnimatedCounter target={100} suffix="%" />
             </div>
             <p className="text-base text-gray-2">
-              Custom design — no templates
+              Custom design, no templates
             </p>
           </motion.div>
           <motion.div

@@ -62,7 +62,10 @@ export default function AboutCQ() {
           CQ Marketing is a full-service digital marketing agency based in
           the Hudson Valley. We&apos;ve spent 15+ years building websites,
           running SEO, creating content, and driving leads for businesses
-          across the trades and construction space.
+          across the trades and construction space. We can become your
+          marketing division, or work alongside your existing team as a
+          flexible partner. Either way, we handle the digital side so you
+          can focus on what you do best.
         </motion.p>
 
         {/* Stats + Logo */}
@@ -96,7 +99,7 @@ export default function AboutCQ() {
               Local
             </div>
             <p className="text-base text-gray-2">
-              Hudson Valley, NY — your backyard
+              Hudson Valley, NY. Your backyard.
             </p>
           </motion.div>
         </motion.div>
@@ -151,11 +154,11 @@ export default function AboutCQ() {
             </h3>
             <ul className="space-y-2">
               {[
-                "Local to the Hudson Valley — based in Newburgh, NY",
+                "Local to the Hudson Valley. Based in Newburgh, NY.",
                 "Track record with construction & trades clients",
                 "Full-service: website, SEO, social media, content, video, AI automation",
-                "Not a template shop — custom builds, real strategy",
-                "You already know our work — Bobby's site is what started this conversation",
+                "Not a template shop. Custom builds, real strategy.",
+                "You already know our work. Bobby's site is what started this conversation.",
               ].map((item) => (
                 <li
                   key={item}

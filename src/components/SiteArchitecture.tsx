@@ -10,7 +10,7 @@ const pages = [
     name: "Home",
     description:
       "High-impact hero with real imagery, three-division portal, trust signals (20 years, 130+ employees, tri-state coverage), and prominent quote request CTAs. This is your digital front door.",
-    why: "First impressions — 60% of visitors decide to stay or leave in under 5 seconds.",
+    why: "First impressions matter. 60% of visitors decide to stay or leave in under 5 seconds.",
   },
   {
     num: "02",
@@ -23,7 +23,7 @@ const pages = [
     num: "03",
     name: "Paving Services",
     description:
-      'Dedicated page for asphalt — commercial, residential, municipal. Feature the crew\'s speed as the hero message: "6:30 AM start, done by noon." Real project photos, clear service list.',
+      'Dedicated page for asphalt: commercial, residential, municipal. Feature the crew\'s speed as the hero message: "6:30 AM start, done by noon." Real project photos, clear service list.',
     why: "Your paving division gets its own keyword-rich landing page instead of sharing space. This is how you outrank competitors for local paving searches.",
     keywords: '"paving contractor Monroe NY," "commercial asphalt Orange County," "parking lot paving Hudson Valley"',
     isKeyword: true,
@@ -32,7 +32,7 @@ const pages = [
     num: "04",
     name: "Pro Site Work",
     description:
-      "Full site excavation, underground utilities, storm water, sewer, water lines, land clearing, demolition, earthwork. This is 65% of your business — it needs a dedicated, keyword-rich page.",
+      "Full site excavation, underground utilities, storm water, sewer, water lines, land clearing, demolition, earthwork. This is 65% of your business. It needs a dedicated, keyword-rich page.",
     why: "65% of your revenue deserves more than a shared page. A dedicated page with targeted content means Google sends excavation searches directly to you.",
     keywords: '"excavation contractor Orange County NY," "site work contractor Hudson Valley," "underground utilities NY NJ CT"',
     isKeyword: true,
@@ -41,8 +41,8 @@ const pages = [
     num: "05",
     name: "PS Concrete Works",
     description:
-      "Foundations, flatwork, curbs, sidewalks, stairwells, retaining walls. Establishes concrete as its own full division — not a footnote on the paving page.",
-    why: "Concrete is its own division — it should have its own page. This tells Google (and clients) that you're a serious concrete contractor, not a paving company that does concrete on the side.",
+      "Foundations, flatwork, curbs, sidewalks, stairwells, retaining walls. Establishes concrete as its own full division, not a footnote on the paving page.",
+    why: "Concrete is its own division, so it should have its own page. This tells Google (and clients) that you're a serious concrete contractor, not a paving company that does concrete on the side.",
     keywords: '"concrete contractor Monroe NY," "commercial concrete Hudson Valley"',
     isKeyword: true,
   },
@@ -51,7 +51,7 @@ const pages = [
     name: "Project Gallery",
     description:
       'Filterable portfolio by division and project type. Drone footage, before/after capability. When a property manager says "show me what you\'ve done," you send this link.',
-    why: "Social proof. Your work is the proof — let it speak for itself.",
+    why: "Social proof. Your work speaks for itself. Let it.",
   },
   {
     num: "07",
@@ -64,7 +64,7 @@ const pages = [
     num: "08",
     name: "Service Areas",
     description:
-      "Interactive map with content blocks for each county — Orange, Rockland, Sullivan, Ulster, Westchester, Dutchess, Suffolk, Bronx + NJ and CT. Each county gets keyword-targeted text.",
+      "Interactive map with content blocks for each county: Orange, Rockland, Sullivan, Ulster, Westchester, Dutchess, Suffolk, Bronx + NJ and CT. Each county gets keyword-targeted text.",
     why: 'Local SEO. This is how you show up when someone searches "paving contractor near me" in any of your counties.',
   },
   {
@@ -78,8 +78,8 @@ const pages = [
     num: "10",
     name: "Request a Quote",
     description:
-      "Multi-step smart form: Select division → describe project → scope & timeline → contact info. Professional, fast, routes directly to your inbox.",
-    why: "A professional form converts 3–5x better than a basic 'Contact Us' page.",
+      "Multi-step smart form: Select division, describe project, scope & timeline, contact info. Professional, fast, routes directly to your inbox.",
+    why: "A professional form converts 3-5x better than a basic 'Contact Us' page.",
   },
   {
     num: "11",
@@ -92,7 +92,7 @@ const pages = [
     num: "12",
     name: "Careers",
     description:
-      'Open positions, company culture, benefits, team photos. A recruiting page signals stability — "this company is hiring" means "this company is busy."',
+      'Open positions, company culture, benefits, team photos. A recruiting page signals stability. "This company is hiring" means "this company is busy."',
     why: "Recruiting + credibility. Replaces Indeed as the first impression for candidates.",
   },
   {
@@ -199,7 +199,7 @@ export default function SiteArchitecture() {
             Individual service deep-dive pages (e.g., dedicated
             &ldquo;Sealcoating&rdquo; or &ldquo;Underground Utilities&rdquo;
             pages), detailed case study writeups, and an FAQ page with schema
-            markup — each one adds more SEO surface area and conversion
+            markup. Each one adds more SEO surface area and conversion
             potential.
           </p>
         </motion.div>

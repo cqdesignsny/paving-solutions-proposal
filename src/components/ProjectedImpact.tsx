@@ -13,11 +13,11 @@ const projections = [
     title: "Search Visibility",
     current: "Near zero",
     projected: "Page 1 for 15+ local keywords",
-    timeline: "3–6 months",
+    timeline: "3-6 months",
     currentPct: 5,
     projectedPct: 80,
     detail:
-      "Right now you have zero meta descriptions, zero schema markup, and zero keyword-targeted pages. With 13 SEO-optimized pages, structured data, and county-specific content, you'll start ranking for terms like \"paving contractor Orange County NY\" and \"commercial excavation Hudson Valley\" within 3–6 months of launch.",
+      "Right now you have zero meta descriptions, zero schema markup, and zero keyword-targeted pages. With 13 SEO-optimized pages, structured data, and county-specific content, you'll start ranking for terms like \"paving contractor Orange County NY\" and \"commercial excavation Hudson Valley\" within 3-6 months of launch.",
   },
   {
     icon: (
@@ -25,25 +25,25 @@ const projections = [
     ),
     title: "Qualified Lead Generation",
     current: "Word of mouth only",
-    projected: "7–15 new inbound leads/month",
-    timeline: "4–8 months",
+    projected: "7-15 new inbound leads/month",
+    timeline: "4-8 months",
     currentPct: 10,
     projectedPct: 65,
     detail:
-      "A professional bid request system with smart routing, combined with SEO-driven traffic, turns your website from a digital brochure into an active lead generation engine. Contractors in your space with optimized sites consistently see 7–15 monthly inbound leads from organic search alone.",
+      "A professional bid request system with smart routing, combined with SEO-driven traffic, turns your website from a digital brochure into an active lead generation engine. Contractors in your space with optimized sites consistently see 7-15 monthly inbound leads from organic search alone.",
   },
   {
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" /></svg>
     ),
     title: "Website Traffic",
-    current: "~50–100 visits/month",
-    projected: "500–1,000 visits/month",
-    timeline: "6–12 months",
+    current: "~50-100 visits/month",
+    projected: "500-1,000 visits/month",
+    timeline: "6-12 months",
     currentPct: 8,
     projectedPct: 70,
     detail:
-      "Between local SEO, county-specific landing pages, AI search readiness, and properly structured content, you can realistically expect a 5–10x increase in organic traffic within the first year. This is traffic from property managers, GCs, and developers actively searching for your services.",
+      "Between local SEO, county-specific landing pages, AI search readiness, and properly structured content, you can realistically expect a 5-10x increase in organic traffic within the first year. This is traffic from property managers, GCs, and developers actively searching for your services.",
   },
   {
     icon: (
@@ -56,33 +56,33 @@ const projections = [
     currentPct: 15,
     projectedPct: 95,
     detail:
-      "The moment your new site goes live, every property manager who Googles you sees a professional, modern company — not a 2018 WordPress site with a default tagline. First impressions close deals. Your site becomes your strongest sales tool, working for you 24/7.",
+      "The moment your new site goes live, every property manager who Googles you sees a professional, modern company. Not a 2018 WordPress site with a default tagline. First impressions close deals. Your site becomes your strongest sales tool, working for you 24/7.",
   },
 ];
 
 const timeline = [
   {
-    phase: "Weeks 1–4",
+    phase: "Weeks 1-4",
     label: "Foundation",
     description: "Strategy, design, keyword research. No visible changes yet.",
   },
   {
-    phase: "Weeks 5–8",
+    phase: "Weeks 5-8",
     label: "Build",
     description: "Site goes to staging. You can preview and share with partners.",
   },
   {
-    phase: "Weeks 9–12",
+    phase: "Weeks 9-12",
     label: "Launch",
     description: "Site goes live. SEO starts indexing. Google begins ranking your pages.",
   },
   {
-    phase: "Month 3–6",
+    phase: "Month 3-6",
     label: "Traction",
     description: "Keywords start ranking. Organic traffic climbs. First inbound leads from search.",
   },
   {
-    phase: "Month 6–12",
+    phase: "Month 6-12",
     label: "Growth",
     description: "Page 1 rankings for target keywords. Consistent lead flow. Measurable ROI.",
   },
@@ -103,9 +103,9 @@ export default function ProjectedImpact() {
           viewport={viewportOnce}
           className="font-serif text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.1] mb-4"
         >
-          The ROI path —
+          The ROI path.
           <br />
-          <span className="italic">what this actually does for you.</span>
+          <span className="italic">What this actually does for you.</span>
         </motion.h2>
 
         <motion.p
@@ -115,10 +115,37 @@ export default function ProjectedImpact() {
           viewport={viewportOnce}
           className="text-xl md:text-2xl text-gray-2 max-w-[660px] leading-relaxed mb-6"
         >
-          This isn&apos;t just a website — it&apos;s a lead generation engine.
+          This isn&apos;t just a website. It&apos;s a lead generation engine.
           Here&apos;s a realistic picture of what changes when your digital
           presence matches your operation.
         </motion.p>
+
+        {/* Success metrics prompt */}
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportOnce}
+          className="bg-gradient-to-r from-bg-3 to-bg-2 border border-border rounded-2xl p-7 md:p-9 mb-10"
+        >
+          <div className="flex items-start gap-4">
+            <div className="text-red flex-shrink-0">
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" /></svg>
+            </div>
+            <div>
+              <h3 className="font-heading text-lg font-bold mb-2">
+                What Does Success Look Like for You?
+              </h3>
+              <p className="text-base text-gray-2 leading-relaxed">
+                At kickoff, we&apos;ll define your specific success metrics
+                together. What does winning look like for Paving Solutions in
+                6-12 months? More inbound leads? Better search rankings?
+                Stronger brand presence? We&apos;ll set measurable goals and
+                build the website to hit them.
+              </p>
+            </div>
+          </div>
+        </motion.div>
 
         {/* Big ROI stat */}
         <motion.div
@@ -150,7 +177,7 @@ export default function ProjectedImpact() {
           <div className="flex-1">
             <p className="text-lg text-gray-1 leading-relaxed">
               One commercial paving contract pays for this website 50 times
-              over. The question isn&apos;t whether this pays for itself — it&apos;s
+              over. The question isn&apos;t whether this pays for itself. It&apos;s
               how fast.
             </p>
           </div>
@@ -277,7 +304,7 @@ export default function ProjectedImpact() {
                   <span className="font-heading text-base font-semibold text-offwhite">
                     {step.label}
                   </span>
-                  <span className="text-gray-3 mx-2">—</span>
+                  <span className="text-gray-3 mx-2">·</span>
                   <span className="text-[15px] text-gray-2">
                     {step.description}
                   </span>
@@ -295,7 +322,7 @@ export default function ProjectedImpact() {
           className="mt-8 text-base text-gray-3 italic max-w-[620px]"
         >
           SEO is a compounding investment. Results build month over month. The
-          sooner you launch, the sooner you start ranking — and the harder it
+          sooner you launch, the sooner you start ranking, and the harder it
           becomes for competitors to catch up.
         </motion.p>
       </div>

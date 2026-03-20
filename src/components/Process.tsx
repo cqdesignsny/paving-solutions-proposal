@@ -7,31 +7,31 @@ import SectionTag from "./SectionTag";
 const phases = [
   {
     id: "P1",
-    weeks: "Weeks 1–4",
+    weeks: "Weeks 1-4",
     title: "Discovery, Strategy & Design",
-    price: "$2,000 — Due at project kickoff",
+    price: "$2,000 | Due at project kickoff",
     description:
-      "We start with a deep-dive kickoff meeting — mapping every page, gathering your photos, drone footage, project references, and brand assets. We research your keywords, audit competitors, and design the full site architecture. Then we deliver homepage and interior page design concepts for your review.",
+      "We start with a deep-dive kickoff meeting where we map every page, gather your photos, drone footage, project references, and brand assets. We research your keywords, audit competitors, and design the full site architecture. Then we deliver homepage and interior page design concepts for your review. We work around your schedule. You don't need to stop what you're doing.",
     deliverable:
       "Approved design direction + complete site map + keyword strategy",
   },
   {
     id: "P2",
-    weeks: "Weeks 5–8",
+    weeks: "Weeks 5-8",
     title: "Development & Content",
-    price: "$1,500 — Due when staging site is delivered",
+    price: "$1,500 | Due when staging site is delivered",
     description:
-      "Full site build on a private staging URL. We develop every page, write SEO-optimized content for all services, integrate your real photography, build responsive layouts for every device, set up the content management system, and configure your quote request forms.",
+      "Full site build on a private staging URL. We develop every page, write SEO-optimized content for all services, integrate your real photography, build responsive layouts for every device, set up the content management system, and configure your quote request forms. We handle the heavy lifting so you can stay focused on running jobs.",
     deliverable:
-      "Working first draft on staging URL — your first look at the complete site",
+      "Working first draft on staging URL. Your first look at the complete site.",
   },
   {
     id: "P3",
-    weeks: "Weeks 9–12+",
+    weeks: "Weeks 9-12+",
     title: "Revisions, SEO & Launch",
-    price: "$1,500 — Due at launch",
+    price: "$1,500 | Due at launch",
     description:
-      "Two rounds of revisions based on your feedback. Cross-browser and device testing. Full SEO implementation — schema markup, meta tags, sitemap submission, Search Console and GA4 setup. Domain migration or redirect configuration. Go live. Then 30 days of monitoring: bug fixes, SEO indexing verification, and performance tuning.",
+      "Two rounds of revisions based on your feedback. Cross-browser and device testing. Full SEO implementation including schema markup, meta tags, sitemap submission, Search Console and GA4 setup. Domain migration or redirect configuration. Go live. Then 30 days of monitoring: bug fixes, SEO indexing verification, and performance tuning.",
     deliverable:
       "Live website + analytics dashboard + SEO baseline report + 30-day support",
   },
@@ -64,8 +64,10 @@ export default function Process() {
           viewport={viewportOnce}
           className="text-xl md:text-2xl text-gray-2 max-w-[640px] leading-relaxed mb-14"
         >
-          We build websites the way you build sites — with a plan, in phases,
-          on schedule. Here&apos;s exactly how the next 12–15 weeks look.
+          We build websites the way you build sites. With a plan, in phases,
+          on schedule. Here&apos;s exactly how the next 12-15 weeks look. We
+          work on a flexible schedule around your availability, so this
+          never gets in the way of your day-to-day.
         </motion.p>
 
         {/* Phases */}

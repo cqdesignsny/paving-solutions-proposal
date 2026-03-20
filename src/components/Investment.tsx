@@ -20,7 +20,7 @@ const addons = [
   {
     name: "Additional Deep-Dive Service Pages",
     description:
-      "Individual pages for specific services (sealcoating, utilities, etc.) — more SEO coverage",
+      "Individual pages for specific services (sealcoating, utilities, etc.) for more SEO coverage",
     price: "$200 / page",
   },
   {
@@ -87,10 +87,10 @@ export default function Investment() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between px-7 py-5 border-b border-border hover:bg-white/[0.01] transition-colors">
             <div>
               <p className="font-heading text-lg font-semibold">
-                Phase 1 — Discovery & Design
+                Phase 1: Discovery & Design
               </p>
               <p className="text-base text-gray-3 mt-0.5">
-                Weeks 1–4 · Strategy, architecture, keyword research, design
+                Weeks 1-4 · Strategy, architecture, keyword research, design
                 concepts
               </p>
             </div>
@@ -102,10 +102,10 @@ export default function Investment() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between px-7 py-5 border-b border-border hover:bg-white/[0.01] transition-colors">
             <div>
               <p className="font-heading text-lg font-semibold">
-                Phase 2 — Development & Content
+                Phase 2: Development & Content
               </p>
               <p className="text-base text-gray-3 mt-0.5">
-                Weeks 5–8 · Full site build, SEO copywriting, staging site
+                Weeks 5-8 · Full site build, SEO copywriting, staging site
                 delivery
               </p>
             </div>
@@ -117,10 +117,10 @@ export default function Investment() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between px-7 py-5 border-b border-border hover:bg-white/[0.01] transition-colors">
             <div>
               <p className="font-heading text-lg font-semibold">
-                Phase 3 — SEO, Launch & Support
+                Phase 3: SEO, Launch & Support
               </p>
               <p className="text-base text-gray-3 mt-0.5">
-                Weeks 9–12+ · Revisions, SEO implementation, domain setup &
+                Weeks 9-12+ · Revisions, SEO implementation, domain setup &
                 redirects, go-live, 30-day monitoring
               </p>
             </div>
@@ -140,6 +140,26 @@ export default function Investment() {
           </div>
         </motion.div>
 
+        {/* Included in build callout */}
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportOnce}
+          className="bg-bg-2 border border-border rounded-2xl p-7 mb-6 flex items-start gap-4"
+        >
+          <div className="text-red flex-shrink-0 mt-0.5">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          </div>
+          <div>
+            <p className="font-heading text-base font-bold text-offwhite mb-1">Included in the Build</p>
+            <p className="text-base text-gray-2 leading-relaxed">
+              Domain setup, redirects, and core site infrastructure are all included
+              in the base build price. No hidden fees. No surprise costs.
+            </p>
+          </div>
+        </motion.div>
+
         {/* Hosting & Maintenance */}
         <motion.div
           variants={fadeUp}
@@ -155,7 +175,7 @@ export default function Investment() {
               </p>
               <p className="text-base text-gray-2 mt-1">
                 Managed hosting, security updates, uptime monitoring, basic
-                maintenance & support — billed annually
+                maintenance & support. Billed annually.
               </p>
             </div>
             <p className="font-heading text-2xl font-extrabold text-offwhite mt-2 sm:mt-0 whitespace-nowrap">
@@ -167,8 +187,8 @@ export default function Investment() {
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
             </div>
             <p className="text-base text-gray-1 leading-relaxed">
-              <span className="font-bold text-offwhite">First 3 months free</span>{" "}
-              — hosting and maintenance are included in the build. Annual
+              <span className="font-bold text-offwhite">First 3 months free.</span>{" "}
+              Hosting and maintenance are included in the build. Annual
               billing begins in month 4.
             </p>
           </div>
@@ -187,12 +207,12 @@ export default function Investment() {
           </div>
           <div>
             <h3 className="font-heading text-lg font-bold mb-1">
-              Estimated Timeline: 12–15 Weeks
+              Estimated Timeline: 12-15 Weeks
             </h3>
             <p className="text-base text-gray-2 leading-relaxed">
-              Your first draft is visible at 4–6 weeks. You&apos;ll have a
+              Your first draft is visible at 4-6 weeks. You&apos;ll have a
               working staging site to review, share with partners, and
-              provide feedback on. Final launch happens at 9–12 weeks with
+              provide feedback on. Final launch happens at 9-12 weeks with
               the 30-day monitoring period included.
             </p>
           </div>
@@ -253,9 +273,8 @@ export default function Investment() {
           viewport={viewportOnce}
           className="mt-8 text-base text-gray-3"
         >
-          Domain setup, redirects, and core site infrastructure are included
-          in the base build. Add-ons can be bundled at kickoff or added
-          post-launch.
+          Add-ons can be bundled at kickoff or added post-launch. No pressure,
+          just options.
         </motion.p>
       </div>
     </section>

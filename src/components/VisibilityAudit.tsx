@@ -6,11 +6,11 @@ import SectionTag from "./SectionTag";
 
 const auditItems = [
   {
-    score: "Needs Attention",
-    severity: "low",
+    score: "Opportunity",
+    severity: "mid",
     title: "Website & Brand Presentation",
     description:
-      'Your site title still reads "Just another WordPress site" — the default WordPress tagline. The About page says "30+ specialists" when you actually have 130+ employees. The copyright says 2018. PS Concrete Works doesn\'t appear anywhere. Pro Sitework shares a page with Paving instead of having its own URL. The site has real project photos, but they\'re in raw galleries with no project context, no descriptions, and no filtering by division.',
+      'You have a working website with real project photos and content that shows what you do. That\'s a solid starting point. A few things have just gone stale over the years: the site title still reads "Just another WordPress site," the About page mentions "30+ specialists" instead of the 130+ employees you actually have, and the copyright is dated 2018. PS Concrete Works isn\'t represented, and Pro Sitework shares a page with Paving instead of standing on its own. These are easy wins that immediately modernize how you show up online.',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -18,11 +18,11 @@ const auditItems = [
     ),
   },
   {
-    score: "Needs Attention",
-    severity: "low",
+    score: "Opportunity",
+    severity: "mid",
     title: "Search Engine Visibility",
     description:
-      "Zero meta descriptions on any page. Zero structured data or schema markup. No keyword-optimized service pages — your Paving page doesn't target a single local keyword. No county-specific content for the 11+ counties you serve. Competitors like American Pavement Solutions are capturing the search traffic that should be yours.",
+      "Your site has content, but it's not set up to rank. There are no meta descriptions on any page, no structured data or schema markup, and no keyword-targeted service pages. Your Paving page doesn't target a single local keyword, and there's no county-specific content for the 11+ counties you serve. Competitors like American Pavement Solutions are showing up for the searches that should be yours. The good news: this is fixable, and the upside is massive.",
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -30,11 +30,11 @@ const auditItems = [
     ),
   },
   {
-    score: "Needs Attention",
-    severity: "low",
+    score: "Opportunity",
+    severity: "mid",
     title: "Social & LinkedIn Presence",
     description:
-      "No active company LinkedIn, Facebook, or Instagram pages found for Paving Solutions Inc. The social icons in your footer link to nowhere — they're dead links. For a B2B company targeting property managers and developers, LinkedIn alone is a massive untapped channel. Your competitors are actively posting job-site content and getting noticed.",
+      "There's no active company LinkedIn, Facebook, or Instagram found for Paving Solutions Inc. The social icons in your footer link to placeholder URLs that don't go anywhere. For a B2B company targeting property managers and developers, LinkedIn alone is a huge untapped channel. Your competitors are posting job-site content and getting noticed. This is low-hanging fruit once the website is in place.",
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -46,7 +46,7 @@ const auditItems = [
     severity: "mid",
     title: "AI Search Readiness",
     description:
-      'When someone asks ChatGPT or Google AI "who\'s the best paving contractor near me?" — your site needs structured content that AI can read and recommend. Right now, there\'s zero structured data, no FAQ content, and no natural-language service descriptions for AI tools to surface. We build for this from day one.',
+      'When someone asks ChatGPT or Google AI "who\'s the best paving contractor near me?", your site needs structured content that AI can read and recommend. Right now, there\'s no structured data, no FAQ content, and no natural-language service descriptions for AI tools to surface. This is the future of search, and we build for it from day one.',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -62,7 +62,7 @@ export default function VisibilityAudit() {
       <div className="absolute top-0 left-0 right-0 h-px bg-border" />
 
       <div className="max-w-[1200px] mx-auto px-6 md:px-10">
-        <SectionTag label="Visibility Audit" id="audit" />
+        <SectionTag label="Where You Stand" id="audit" />
 
         <motion.h2
           variants={fadeUp}
@@ -71,9 +71,9 @@ export default function VisibilityAudit() {
           viewport={viewportOnce}
           className="font-serif text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.1] mb-4"
         >
-          Where you are today —
+          You&apos;ve built something incredible.
           <br />
-          <span className="italic">and where you should be.</span>
+          <span className="italic">Let&apos;s make sure the world sees it.</span>
         </motion.h2>
 
         <motion.p
@@ -81,11 +81,12 @@ export default function VisibilityAudit() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="text-xl md:text-2xl text-gray-2 max-w-[620px] leading-relaxed mb-6"
+          className="text-xl md:text-2xl text-gray-2 max-w-[680px] leading-relaxed mb-6"
         >
-          Your physical operation speaks for itself. But when a property
-          manager, GC, or developer searches for you online — here&apos;s
-          what they find today.
+          Your physical operation speaks for itself. You&apos;ve been too busy
+          building an incredible business to worry about the website. That makes
+          sense. But when a property manager, GC, or developer searches for you
+          online, here&apos;s what they find today.
         </motion.p>
 
         {/* "10 vs 3" callout */}
@@ -117,8 +118,11 @@ export default function VisibilityAudit() {
           </div>
           <div className="flex-1">
             <p className="text-lg text-gray-1 leading-relaxed">
-              You&apos;ve built an incredible company. The digital side just
-              hasn&apos;t kept pace yet. That&apos;s the gap we close.
+              You have a good foundation to work with. We were able to pull real
+              content from your current site for this very proposal. It just
+              hasn&apos;t been updated because you&apos;ve been focused on growing
+              the business. Modern marketing has so many tools available now, and
+              we have the knowledge and ability to implement them for you.
             </p>
           </div>
         </motion.div>
@@ -139,11 +143,7 @@ export default function VisibilityAudit() {
             >
               <div className="flex items-center gap-3 mb-5">
                 <div
-                  className={`flex items-center gap-2 px-3.5 py-1.5 rounded-full text-sm font-heading font-bold tracking-wide ${
-                    item.severity === "low"
-                      ? "bg-red-glow text-red-light"
-                      : "bg-[rgba(232,160,32,0.12)] text-[#E8A020]"
-                  }`}
+                  className="flex items-center gap-2 px-3.5 py-1.5 rounded-full text-sm font-heading font-bold tracking-wide bg-[rgba(232,160,32,0.12)] text-[#E8A020]"
                 >
                   <span className="w-2 h-2 rounded-full bg-current" />
                   {item.score}
@@ -165,24 +165,42 @@ export default function VisibilityAudit() {
               <div>
                 <div className="flex justify-between items-center mb-1.5">
                   <span className="font-heading text-xs tracking-wide uppercase text-gray-4">Current Score</span>
-                  <span className={`font-heading text-sm font-bold ${item.severity === "low" ? "text-red" : "text-[#E8A020]"}`}>
-                    {item.severity === "low" ? "2/10" : "3/10"}
+                  <span className="font-heading text-sm font-bold text-[#E8A020]">
+                    3/10
                   </span>
                 </div>
                 <div className="h-2 bg-bg-5 rounded-full overflow-hidden">
                   <div
                     className="progress-bar"
                     style={{
-                      width: item.severity === "low" ? "20%" : "30%",
-                      background: item.severity === "low"
-                        ? "linear-gradient(90deg, #C41E2A, #E02D3A)"
-                        : "linear-gradient(90deg, #E8A020, #F0B840)",
+                      width: "30%",
+                      background: "linear-gradient(90deg, #E8A020, #F0B840)",
                     }}
                   />
                 </div>
               </div>
             </motion.div>
           ))}
+        </motion.div>
+
+        {/* Positive framing note */}
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportOnce}
+          className="mt-8 bg-bg-2 border border-border rounded-xl p-6 flex items-start gap-4"
+        >
+          <div className="text-red flex-shrink-0 mt-0.5">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          </div>
+          <p className="text-base text-gray-1 leading-relaxed">
+            <span className="font-bold text-offwhite">The bottom line: </span>
+            None of this is unusual for a company that&apos;s been heads-down building.
+            You have real content, real photos, and a real story to tell. We just need to
+            modernize how it&apos;s packaged and make sure search engines and AI tools
+            can find it. That&apos;s exactly what this build does.
+          </p>
         </motion.div>
       </div>
     </section>
