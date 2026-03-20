@@ -57,7 +57,7 @@ export default function AboutCQ() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="text-lg md:text-xl text-gray-2 max-w-[660px] leading-relaxed mb-14"
+          className="text-xl md:text-2xl text-gray-2 max-w-[660px] leading-relaxed mb-14"
         >
           CQ Marketing is a full-service digital marketing agency based in
           the Hudson Valley. We&apos;ve spent 15+ years building websites,
@@ -113,7 +113,7 @@ export default function AboutCQ() {
             <motion.div
               key={member.name}
               variants={fadeUp}
-              className="bg-bg-2 border border-border rounded-2xl p-7 hover:border-border-h transition-colors duration-300"
+              className="bg-bg-2 border border-border rounded-2xl p-7 card-hover"
             >
               <h3 className="font-heading text-xl font-bold mb-1">
                 {member.name}
@@ -121,7 +121,7 @@ export default function AboutCQ() {
               <p className="font-heading text-sm text-red font-semibold mb-3">
                 {member.role}
               </p>
-              <p className="text-[15px] text-gray-2 leading-relaxed">
+              <p className="text-base text-gray-2 leading-relaxed">
                 {member.description}
               </p>
             </motion.div>
@@ -138,7 +138,7 @@ export default function AboutCQ() {
         >
           <div className="flex-shrink-0">
             <Image
-              src="/images/cq-logo.png"
+              src="/images/cq-logo-white.png"
               alt="CQ Marketing"
               width={200}
               height={60}
@@ -159,7 +159,7 @@ export default function AboutCQ() {
               ].map((item) => (
                 <li
                   key={item}
-                  className="text-[15px] text-gray-2 leading-relaxed flex items-start gap-2"
+                  className="text-base text-gray-2 leading-relaxed flex items-start gap-2"
                 >
                   <svg className="w-4 h-4 text-red mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
                   {item}

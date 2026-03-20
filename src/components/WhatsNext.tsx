@@ -62,7 +62,7 @@ export default function WhatsNext() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="text-lg md:text-xl text-gray-2 max-w-[620px] leading-relaxed mb-14"
+          className="text-xl md:text-2xl text-gray-2 max-w-[620px] leading-relaxed mb-14"
         >
           Once your site is live and ranking, there&apos;s a bigger
           opportunity to drive consistent leads and grow the brand. Here&apos;s
@@ -80,13 +80,13 @@ export default function WhatsNext() {
             <motion.div
               key={opp.title}
               variants={fadeUp}
-              className="bg-bg-3 border border-border rounded-2xl p-7 hover:border-border-h hover:-translate-y-1 transition-all duration-500 group"
+              className="bg-bg-3 border border-border rounded-2xl p-7 card-hover group"
             >
               <div className="text-red mb-4">{opp.icon}</div>
               <h3 className="font-heading text-xl font-bold mb-3">
                 {opp.title}
               </h3>
-              <p className="text-[15px] text-gray-2 leading-relaxed">
+              <p className="text-base text-gray-2 leading-relaxed">
                 {opp.description}
               </p>
             </motion.div>

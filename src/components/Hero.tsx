@@ -95,7 +95,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
-          className="font-heading text-[13px] md:text-sm tracking-[0.25em] uppercase text-gray-3 mb-8"
+          className="font-heading text-sm md:text-base tracking-[0.25em] uppercase text-gray-3 mb-8"
         >
           Website Strategy & Build Proposal
         </motion.p>
@@ -121,7 +121,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.9 }}
-          className="text-lg md:text-xl text-gray-2 max-w-[640px] mx-auto mb-12 leading-relaxed"
+          className="text-xl md:text-2xl text-gray-2 max-w-[700px] mx-auto mb-12 leading-relaxed"
         >
           Paving Solutions Inc. runs 130+ employees, three specialized
           divisions, and a world-class paving crew across the Tri-State area.
@@ -137,13 +137,13 @@ export default function Hero() {
         >
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="font-heading text-3xl md:text-4xl font-extrabold text-offwhite">
+              <div className="font-heading text-4xl md:text-5xl font-extrabold text-offwhite">
                 <AnimatedCounter
                   target={stat.value}
                   suffix={stat.suffix}
                 />
               </div>
-              <div className="font-heading text-[11px] md:text-xs tracking-[0.15em] uppercase text-gray-3 mt-1">
+              <div className="font-heading text-xs md:text-sm tracking-[0.15em] uppercase text-gray-3 mt-1">
                 {stat.label}
               </div>
             </div>
@@ -152,31 +152,13 @@ export default function Hero() {
             <div className="font-heading text-3xl md:text-4xl font-extrabold text-offwhite">
               Tri-State
             </div>
-            <div className="font-heading text-[11px] md:text-xs tracking-[0.15em] uppercase text-gray-3 mt-1">
+            <div className="font-heading text-xs md:text-sm tracking-[0.15em] uppercase text-gray-3 mt-1">
               Service Area
             </div>
           </div>
         </motion.div>
       </motion.div>
 
-      {/* Scroll cue */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.6, duration: 0.8 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10"
-      >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          className="flex flex-col items-center gap-2"
-        >
-          <div className="w-px h-8 bg-gradient-to-b from-red to-transparent" />
-          <span className="font-heading text-[10px] tracking-[0.2em] uppercase text-gray-3">
-            Scroll
-          </span>
-        </motion.div>
-      </motion.div>
     </section>
   );
 }

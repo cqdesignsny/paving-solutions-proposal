@@ -68,7 +68,7 @@ export default function Investment() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="text-lg md:text-xl text-gray-2 max-w-[640px] leading-relaxed mb-12"
+          className="text-xl md:text-2xl text-gray-2 max-w-[640px] leading-relaxed mb-12"
         >
           The website build is a one-time investment of $5,000, split across
           three milestones. Add-ons are optional and can be included now or

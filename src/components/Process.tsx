@@ -62,7 +62,7 @@ export default function Process() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="text-lg md:text-xl text-gray-2 max-w-[640px] leading-relaxed mb-14"
+          className="text-xl md:text-2xl text-gray-2 max-w-[640px] leading-relaxed mb-14"
         >
           We build websites the way you build sites — with a plan, in phases,
           on schedule. Here&apos;s exactly how the next 12–15 weeks look.
@@ -104,7 +104,7 @@ export default function Process() {
                   {phase.description}
                 </p>
                 <div className="inline-block bg-red-dim rounded-xl px-5 py-3">
-                  <p className="text-[15px] text-gray-1">
+                  <p className="text-base text-gray-1">
                     <span className="font-bold text-offwhite">
                       You receive:{" "}
                     </span>

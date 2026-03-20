@@ -24,7 +24,8 @@ const pages = [
     name: "Paving Services",
     description:
       'Dedicated page for asphalt — commercial, residential, municipal. Feature the crew\'s speed as the hero message: "6:30 AM start, done by noon." Real project photos, clear service list.',
-    why: 'Target: "paving contractor Monroe NY," "commercial asphalt Orange County," "parking lot paving Hudson Valley"',
+    why: "Your paving division gets its own keyword-rich landing page instead of sharing space. This is how you outrank competitors for local paving searches.",
+    keywords: '"paving contractor Monroe NY," "commercial asphalt Orange County," "parking lot paving Hudson Valley"',
     isKeyword: true,
   },
   {
@@ -32,7 +33,8 @@ const pages = [
     name: "Pro Site Work",
     description:
       "Full site excavation, underground utilities, storm water, sewer, water lines, land clearing, demolition, earthwork. This is 65% of your business — it needs a dedicated, keyword-rich page.",
-    why: 'Target: "excavation contractor Orange County NY," "site work contractor Hudson Valley," "underground utilities NY NJ CT"',
+    why: "65% of your revenue deserves more than a shared page. A dedicated page with targeted content means Google sends excavation searches directly to you.",
+    keywords: '"excavation contractor Orange County NY," "site work contractor Hudson Valley," "underground utilities NY NJ CT"',
     isKeyword: true,
   },
   {
@@ -40,7 +42,8 @@ const pages = [
     name: "PS Concrete Works",
     description:
       "Foundations, flatwork, curbs, sidewalks, stairwells, retaining walls. Establishes concrete as its own full division — not a footnote on the paving page.",
-    why: 'Target: "concrete contractor Monroe NY," "commercial concrete Hudson Valley"',
+    why: "Concrete is its own division — it should have its own page. This tells Google (and clients) that you're a serious concrete contractor, not a paving company that does concrete on the side.",
+    keywords: '"concrete contractor Monroe NY," "commercial concrete Hudson Valley"',
     isKeyword: true,
   },
   {
@@ -126,7 +129,7 @@ export default function SiteArchitecture() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="text-lg md:text-xl text-gray-2 max-w-[620px] leading-relaxed mb-12"
+          className="text-xl md:text-2xl text-gray-2 max-w-[620px] leading-relaxed mb-12"
         >
           Here&apos;s exactly what we&apos;ll build, what goes on each page,
           and why it matters for your business.
@@ -144,7 +147,7 @@ export default function SiteArchitecture() {
             <motion.div
               key={page.num}
               variants={fadeUp}
-              className="group bg-bg-3 border border-border rounded-xl overflow-hidden hover:border-border-h transition-colors duration-300"
+              className="group bg-bg-3 border border-border rounded-xl overflow-hidden card-hover"
             >
               <div className="flex flex-col md:flex-row md:items-stretch">
                 {/* Left: page name */}
@@ -159,15 +162,22 @@ export default function SiteArchitecture() {
 
                 {/* Right: description */}
                 <div className="flex-1 px-5 py-4">
-                  <p className="text-[15px] text-gray-2 leading-relaxed mb-2">
+                  <p className="text-base text-gray-2 leading-relaxed mb-3">
                     {page.description}
                   </p>
-                  <p className="text-sm text-gray-3 font-heading">
-                    <span className={page.isKeyword ? "text-red" : "text-red"}>
-                      {page.isKeyword ? "Target Keywords: " : "Why: "}
-                    </span>
-                    <span className="text-gray-3">{page.why}</span>
-                  </p>
+                  <div className="inline-flex items-start gap-2 bg-red-glow rounded-lg px-4 py-2.5">
+                    <span className="font-heading text-sm font-bold text-red-light whitespace-nowrap mt-0.5">Why:</span>
+                    <span className="text-sm text-offwhite leading-relaxed">{page.why}</span>
+                  </div>
+                  {page.isKeyword && page.keywords && (
+                    <div className="mt-2 flex items-start gap-2">
+                      <svg className="w-4 h-4 text-red mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                      <span className="text-sm text-gray-3 font-heading">
+                        <span className="text-red font-bold">Target Keywords: </span>
+                        {page.keywords}
+                      </span>
+                    </div>
+                  )}
                 </div>
               </div>
             </motion.div>
@@ -185,7 +195,7 @@ export default function SiteArchitecture() {
           <p className="font-heading text-base font-bold mb-2">
             Optional Add-On Pages
           </p>
-          <p className="text-[15px] text-gray-2 leading-relaxed">
+          <p className="text-base text-gray-2 leading-relaxed">
             Individual service deep-dive pages (e.g., dedicated
             &ldquo;Sealcoating&rdquo; or &ldquo;Underground Utilities&rdquo;
             pages), detailed case study writeups, and an FAQ page with schema

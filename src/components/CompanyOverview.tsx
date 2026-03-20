@@ -84,7 +84,7 @@ export default function CompanyOverview() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="text-lg md:text-xl text-gray-2 max-w-[600px] leading-relaxed mb-14"
+          className="text-xl md:text-2xl text-gray-2 max-w-[600px] leading-relaxed mb-14"
         >
           From asphalt to underground utilities to structural concrete — PS
           Companies delivers full-site infrastructure across the Tri-State
@@ -103,7 +103,7 @@ export default function CompanyOverview() {
             <motion.div
               key={div.num}
               variants={fadeUp}
-              className="group relative bg-bg-3 border border-border rounded-2xl overflow-hidden hover:border-border-h transition-all duration-500 hover:-translate-y-1"
+              className="group relative bg-bg-3 border border-border rounded-2xl overflow-hidden card-hover"
             >
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
@@ -126,21 +126,21 @@ export default function CompanyOverview() {
                 <h3 className="font-heading text-xl font-bold mb-1">
                   {div.name}
                 </h3>
-                <p className="font-heading text-sm text-red font-semibold tracking-wide mb-4">
+                <p className="font-heading text-base text-red font-semibold tracking-wide mb-4">
                   {div.revenue}
                 </p>
                 <ul className="space-y-2 mb-5">
                   {div.services.map((s) => (
                     <li
                       key={s}
-                      className="text-[15px] text-gray-2 flex items-start gap-2"
+                      className="text-base text-gray-2 flex items-start gap-2"
                     >
                       <span className="text-gray-4 mt-1.5 text-xs">→</span>
                       {s}
                     </li>
                   ))}
                 </ul>
-                <p className="text-sm text-gray-3 italic border-t border-border pt-4">
+                <p className="text-base text-gray-3 italic border-t border-border pt-4">
                   {div.highlight}
                 </p>
               </div>

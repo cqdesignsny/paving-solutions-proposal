@@ -76,7 +76,7 @@ export default function SEOStrategy() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="text-lg md:text-xl text-gray-2 max-w-[620px] leading-relaxed mb-6"
+          className="text-xl md:text-2xl text-gray-2 max-w-[620px] leading-relaxed mb-6"
         >
           Every page we build is engineered for search visibility — from
           Google to ChatGPT. Here&apos;s the full SEO scope included in this
@@ -123,7 +123,7 @@ export default function SEOStrategy() {
             <motion.div
               key={section.title}
               variants={fadeUp}
-              className="bg-bg-3 border border-border rounded-2xl p-7 hover:border-border-h transition-colors duration-300"
+              className="bg-bg-3 border border-border rounded-2xl p-7 card-hover"
             >
               <h3 className="font-heading text-lg font-bold mb-5 flex items-center gap-3">
                 <span className="w-2.5 h-2.5 rounded-full bg-red flex-shrink-0" />
@@ -133,7 +133,7 @@ export default function SEOStrategy() {
                 {section.items.map((item) => (
                   <li
                     key={item}
-                    className="text-[15px] text-gray-2 leading-relaxed pl-4 relative"
+                    className="text-base text-gray-2 leading-relaxed pl-4 relative"
                   >
                     <span className="absolute left-0 text-red font-bold">
                       ·

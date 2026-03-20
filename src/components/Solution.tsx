@@ -82,7 +82,7 @@ export default function Solution() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="text-lg md:text-xl text-gray-2 max-w-[620px] leading-relaxed mb-14"
+          className="text-xl md:text-2xl text-gray-2 max-w-[620px] leading-relaxed mb-14"
         >
           We&apos;re building a modern, mobile-first website that unifies all
           three PS divisions, showcases your real work, captures qualified
@@ -144,13 +144,13 @@ export default function Solution() {
             <motion.div
               key={f.title}
               variants={fadeUp}
-              className="bg-bg-2 border border-border rounded-2xl p-7 hover:border-border-h hover:-translate-y-1 transition-all duration-500 group"
+              className="bg-bg-2 border border-border rounded-2xl p-7 card-hover group"
             >
               <div className="text-red mb-4">{f.icon}</div>
               <h3 className="font-heading text-lg font-bold mb-2">
                 {f.title}
               </h3>
-              <p className="text-[15px] text-gray-2 leading-relaxed">
+              <p className="text-base text-gray-2 leading-relaxed">
                 {f.description}
               </p>
             </motion.div>

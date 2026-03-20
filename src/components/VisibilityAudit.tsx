@@ -81,7 +81,7 @@ export default function VisibilityAudit() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="text-lg md:text-xl text-gray-2 max-w-[620px] leading-relaxed mb-6"
+          className="text-xl md:text-2xl text-gray-2 max-w-[620px] leading-relaxed mb-6"
         >
           Your physical operation speaks for itself. But when a property
           manager, GC, or developer searches for you online — here&apos;s
@@ -135,7 +135,7 @@ export default function VisibilityAudit() {
             <motion.div
               key={item.title}
               variants={fadeUp}
-              className="bg-bg-3 border border-border rounded-2xl p-7 hover:border-border-h transition-colors duration-300"
+              className="bg-bg-3 border border-border rounded-2xl p-7 card-hover"
             >
               <div className="flex items-center gap-3 mb-5">
                 <div
@@ -157,9 +157,30 @@ export default function VisibilityAudit() {
                 </h3>
               </div>
 
-              <p className="text-[15px] md:text-base text-gray-2 leading-relaxed">
+              <p className="text-base text-gray-2 leading-relaxed mb-4">
                 {item.description}
               </p>
+
+              {/* Score progress bar */}
+              <div>
+                <div className="flex justify-between items-center mb-1.5">
+                  <span className="font-heading text-xs tracking-wide uppercase text-gray-4">Current Score</span>
+                  <span className={`font-heading text-sm font-bold ${item.severity === "low" ? "text-red" : "text-[#E8A020]"}`}>
+                    {item.severity === "low" ? "2/10" : "3/10"}
+                  </span>
+                </div>
+                <div className="h-2 bg-bg-5 rounded-full overflow-hidden">
+                  <div
+                    className="progress-bar"
+                    style={{
+                      width: item.severity === "low" ? "20%" : "30%",
+                      background: item.severity === "low"
+                        ? "linear-gradient(90deg, #C41E2A, #E02D3A)"
+                        : "linear-gradient(90deg, #E8A020, #F0B840)",
+                    }}
+                  />
+                </div>
+              </div>
             </motion.div>
           ))}
         </motion.div>

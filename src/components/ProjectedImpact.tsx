@@ -14,6 +14,8 @@ const projections = [
     current: "Near zero",
     projected: "Page 1 for 15+ local keywords",
     timeline: "3–6 months",
+    currentPct: 5,
+    projectedPct: 80,
     detail:
       "Right now you have zero meta descriptions, zero schema markup, and zero keyword-targeted pages. With 13 SEO-optimized pages, structured data, and county-specific content, you'll start ranking for terms like \"paving contractor Orange County NY\" and \"commercial excavation Hudson Valley\" within 3–6 months of launch.",
   },
@@ -23,10 +25,12 @@ const projections = [
     ),
     title: "Qualified Lead Generation",
     current: "Word of mouth only",
-    projected: "10–25 new inbound leads/month",
+    projected: "7–15 new inbound leads/month",
     timeline: "4–8 months",
+    currentPct: 10,
+    projectedPct: 65,
     detail:
-      "A professional bid request system with smart routing, combined with SEO-driven traffic, turns your website from a digital brochure into an active lead generation engine. Contractors in your space with optimized sites consistently see 10–25 monthly inbound leads from organic search alone.",
+      "A professional bid request system with smart routing, combined with SEO-driven traffic, turns your website from a digital brochure into an active lead generation engine. Contractors in your space with optimized sites consistently see 7–15 monthly inbound leads from organic search alone.",
   },
   {
     icon: (
@@ -34,10 +38,12 @@ const projections = [
     ),
     title: "Website Traffic",
     current: "~50–100 visits/month",
-    projected: "500–1,500 visits/month",
+    projected: "500–1,000 visits/month",
     timeline: "6–12 months",
+    currentPct: 8,
+    projectedPct: 70,
     detail:
-      "Between local SEO, county-specific landing pages, AI search readiness, and properly structured content, you can realistically expect a 10x increase in organic traffic within the first year. This is traffic from property managers, GCs, and developers actively searching for your services.",
+      "Between local SEO, county-specific landing pages, AI search readiness, and properly structured content, you can realistically expect a 5–10x increase in organic traffic within the first year. This is traffic from property managers, GCs, and developers actively searching for your services.",
   },
   {
     icon: (
@@ -47,6 +53,8 @@ const projections = [
     current: "\"Just another WordPress site\"",
     projected: "Industry-leading web presence",
     timeline: "Immediate at launch",
+    currentPct: 15,
+    projectedPct: 95,
     detail:
       "The moment your new site goes live, every property manager who Googles you sees a professional, modern company — not a 2018 WordPress site with a default tagline. First impressions close deals. Your site becomes your strongest sales tool, working for you 24/7.",
   },
@@ -105,7 +113,7 @@ export default function ProjectedImpact() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="text-lg md:text-xl text-gray-2 max-w-[660px] leading-relaxed mb-6"
+          className="text-xl md:text-2xl text-gray-2 max-w-[660px] leading-relaxed mb-6"
         >
           This isn&apos;t just a website — it&apos;s a lead generation engine.
           Here&apos;s a realistic picture of what changes when your digital
@@ -160,7 +168,7 @@ export default function ProjectedImpact() {
             <motion.div
               key={item.title}
               variants={fadeUp}
-              className="bg-bg-2 border border-border rounded-2xl p-7 hover:border-border-h transition-colors duration-300"
+              className="bg-bg-2 border border-border rounded-2xl p-7 card-hover"
             >
               <div className="flex items-center gap-3 mb-4">
                 <div className="text-red">{item.icon}</div>
@@ -191,6 +199,28 @@ export default function ProjectedImpact() {
                 </div>
               </div>
 
+              {/* Progress comparison bars */}
+              <div className="space-y-2 mb-4">
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span className="font-heading text-xs text-gray-4 uppercase tracking-wide">Now</span>
+                    <span className="font-heading text-xs text-gray-4">{item.currentPct}%</span>
+                  </div>
+                  <div className="h-2.5 bg-bg-5 rounded-full overflow-hidden">
+                    <div className="progress-bar" style={{ width: `${item.currentPct}%`, background: "linear-gradient(90deg, #3A3A40, #666670)" }} />
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span className="font-heading text-xs text-red uppercase tracking-wide">Projected</span>
+                    <span className="font-heading text-xs text-red">{item.projectedPct}%</span>
+                  </div>
+                  <div className="h-2.5 bg-bg-5 rounded-full overflow-hidden">
+                    <div className="progress-bar" style={{ width: `${item.projectedPct}%` }} />
+                  </div>
+                </div>
+              </div>
+
               <div className="flex items-center gap-2 mb-3">
                 <svg className="w-4 h-4 text-gray-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 <span className="font-heading text-sm text-gray-3">
@@ -198,7 +228,7 @@ export default function ProjectedImpact() {
                 </span>
               </div>
 
-              <p className="text-[15px] text-gray-2 leading-relaxed">
+              <p className="text-base text-gray-2 leading-relaxed">
                 {item.detail}
               </p>
             </motion.div>

@@ -53,7 +53,7 @@ export default function CTA() {
             initial="hidden"
             whileInView="visible"
             viewport={viewportOnce}
-            className="text-lg md:text-xl text-gray-2 max-w-[520px] mx-auto mb-10 leading-relaxed"
+            className="text-xl md:text-2xl text-gray-2 max-w-[520px] mx-auto mb-10 leading-relaxed"
           >
             Give us the green light and we&apos;ll have a kickoff meeting
             scheduled within the week. Your first draft is 4–6 weeks away.
