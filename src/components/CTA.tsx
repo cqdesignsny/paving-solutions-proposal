@@ -53,10 +53,11 @@ export default function CTA() {
             initial="hidden"
             whileInView="visible"
             viewport={viewportOnce}
-            className="text-xl md:text-2xl text-gray-2 max-w-[520px] mx-auto mb-10 leading-relaxed"
+            className="text-xl md:text-2xl text-gray-2 max-w-[580px] mx-auto mb-10 leading-relaxed"
           >
-            Give us the green light and we&apos;ll have a kickoff meeting
-            scheduled within the week. Your first draft is 4–6 weeks away.
+            Schedule your project kickoff meeting below. We&apos;ll walk
+            through the proposal together, sign the service agreement, take
+            the Phase 1 deposit, and officially kick off the build.
           </motion.p>
 
           <motion.a
@@ -64,10 +65,12 @@ export default function CTA() {
             initial="hidden"
             whileInView="visible"
             viewport={viewportOnce}
-            href="mailto:cesar@creativequalitymarketing.com?subject=Paving%20Solutions%20Website%20—%20Let's%20Go"
+            href="https://calendly.com/cq-marketing/project-kick-off"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 bg-red text-offwhite font-heading font-bold text-lg md:text-xl px-10 py-5 rounded-full hover:-translate-y-1 hover:shadow-[0_8px_40px_rgba(196,30,42,0.4)] transition-all duration-300 w-full sm:w-auto"
           >
-            Let&apos;s Get Started
+            Schedule Kickoff Meeting
             <span className="text-xl">→</span>
           </motion.a>
 
